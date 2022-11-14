@@ -4,5 +4,6 @@ from application import views
 
 urlpatterns = [
     path('', views.index, name="index"),
-    path('callback', views.callback.as_view(), name="callback")
+    path('callback', views.callback.as_view(), name="callback"),
+    path('home', views.home, name="home"),
 ]
