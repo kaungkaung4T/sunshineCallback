@@ -2,19 +2,19 @@ from django.db import models
 
 # Create your models here.
 class kbz(models.Model):
-    notify_time = models.CharField(max_length=255)
-    merch_code = models.CharField(max_length=255)
-    merch_order_id = models.CharField(max_length=255)
-    mm_order_id = models.CharField(max_length=255)
-    trans_currency = models.CharField(max_length=255)
-    total_amount = models.CharField(max_length=255)
-    trade_status = models.CharField(max_length=255)
-    trans_end_time = models.CharField(max_length=255)
-    callback_info = models.CharField(max_length=255)
-    nonce_str = models.CharField(max_length=255)
-    sign_type = models.CharField(max_length=255)
-    appid = models.CharField(max_length=40)
-    sign = models.CharField(max_length=255)
+    notify_time = models.CharField(max_length=255, blank=True, null=True)
+    merch_code = models.CharField(max_length=255, blank=True, null=True)
+    merch_order_id = models.CharField(max_length=255, blank=True, null=True)
+    mm_order_id = models.CharField(max_length=255, blank=True, null=True)
+    trans_currency = models.CharField(max_length=255, blank=True, null=True)
+    total_amount = models.CharField(max_length=255, blank=True, null=True)
+    trade_status = models.CharField(max_length=255, blank=True, null=True)
+    trans_end_time = models.CharField(max_length=255, blank=True, null=True)
+    callback_info = models.CharField(max_length=255, blank=True, null=True)
+    nonce_str = models.CharField(max_length=255, blank=True, null=True)
+    sign_type = models.CharField(max_length=255, blank=True, null=True)
+    appid = models.CharField(max_length=40, blank=True, null=True)
+    sign = models.CharField(max_length=255, blank=True, null=True)
 
 
 class kbz_request(models.Model):
