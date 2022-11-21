@@ -12,7 +12,8 @@ class callback(APIView):
         if kbs.is_valid():
             kbs.save()
             # return Response("success", content_type="text/plain")
-            return Response("success", content_type="text/plain")
+            # return Response("success", content_type="text/plain")
+            return Response("fail", content_type="text/plain")
 
         return Response(kbs.errors)
 
